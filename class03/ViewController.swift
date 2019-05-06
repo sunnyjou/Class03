@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var Label_A: UILabel!
     
     @IBAction func Button_Push(_ sender: Any) {
-        Label_A.text="HI,Xcode"
+        Label_A.text="HI,Sunny"
     }
     override func viewDidLoad() {
         super.viewDidLoad()
