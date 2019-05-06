@@ -14,6 +14,7 @@
 		FFAD2DB122640EAD00F42805 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFAD2DAF22640EAD00F42805 /* LaunchScreen.storyboard */; };
 		FFAD2DBC22640EAD00F42805 /* class03Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAD2DBB22640EAD00F42805 /* class03Tests.swift */; };
 		FFAD2DC722640EAD00F42805 /* class03UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAD2DC622640EAD00F42805 /* class03UITests.swift */; };
+		FFD1B8E8227FDEDE0062FEF9 /* MyBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD1B8E7227FDEDE0062FEF9 /* MyBrowserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		FFAD2DC222640EAD00F42805 /* class03UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = class03UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFAD2DC622640EAD00F42805 /* class03UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = class03UITests.swift; sourceTree = "<group>"; };
 		FFAD2DC822640EAD00F42805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFD1B8E7227FDEDE0062FEF9 /* MyBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBrowserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				FFAD2DAD22640EAD00F42805 /* Assets.xcassets */,
 				FFAD2DAF22640EAD00F42805 /* LaunchScreen.storyboard */,
 				FFAD2DB222640EAD00F42805 /* Info.plist */,
+				FFD1B8E7227FDEDE0062FEF9 /* MyBrowserViewController.swift */,
 			);
 			path = class03;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFAD2DA922640EAB00F42805 /* ViewController.swift in Sources */,
+				FFD1B8E8227FDEDE0062FEF9 /* MyBrowserViewController.swift in Sources */,
 				FFAD2DA722640EAB00F42805 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
