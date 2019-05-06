@@ -85,11 +85,11 @@
             </objects>
             <point key="canvasLocation" x="886.95652173913049" y="345.53571428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--My Browser View Controller-->
         <scene sceneID="nK0-ir-x2V">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9zn-a8-ayG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="cuM-3Z-b3o" sceneMemberID="viewController">
+                <viewController id="cuM-3Z-b3o" customClass="MyBrowserViewController" customModule="class03" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gOO-m4-45J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
