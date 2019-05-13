@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0SY-nK-vk5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0SY-nK-vk5">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -88,14 +88,13 @@
         <!--My Browser View Controller-->
         <scene sceneID="nK0-ir-x2V">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9zn-a8-ayG" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="cuM-3Z-b3o" customClass="MyBrowserViewController" customModule="class03" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gOO-m4-45J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqZ-qB-LQD">
-                                <rect key="frame" x="344" y="815" width="50" height="30"/>
+                                <rect key="frame" x="344" y="801" width="50" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="6RC-Dt-5HT"/>
                                     <constraint firstAttribute="height" constant="30" id="df9-h9-55J"/>
@@ -103,7 +102,7 @@
                                 <state key="normal" title="GO"/>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jlK-n6-AHx">
-                                <rect key="frame" x="20" y="815" width="308" height="30"/>
+                                <rect key="frame" x="20" y="801" width="308" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="4Zz-Fq-ypb"/>
                                 </constraints>
@@ -114,7 +113,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Fng-Yt-bJO" firstAttribute="bottom" secondItem="bqZ-qB-LQD" secondAttribute="bottom" constant="17" id="dm7-no-bZz"/>
+                            <constraint firstItem="Fng-Yt-bJO" firstAttribute="bottom" secondItem="bqZ-qB-LQD" secondAttribute="bottom" constant="31" id="dm7-no-bZz"/>
                             <constraint firstItem="bqZ-qB-LQD" firstAttribute="leading" secondItem="jlK-n6-AHx" secondAttribute="trailing" constant="16" id="hfM-l4-T8k"/>
                             <constraint firstItem="Fng-Yt-bJO" firstAttribute="trailing" secondItem="bqZ-qB-LQD" secondAttribute="trailing" constant="20" id="iQ7-i5-EWu"/>
                             <constraint firstItem="jlK-n6-AHx" firstAttribute="leading" secondItem="Fng-Yt-bJO" secondAttribute="leading" constant="20" id="kYI-N6-nag"/>
@@ -122,7 +121,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Fng-Yt-bJO"/>
                     </view>
+                    <connections>
+                        <outlet property="btnGoBottomConstraint" destination="dm7-no-bZz" id="LgH-Nq-iYG"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9zn-a8-ayG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="895.6521739130435" y="-319.41964285714283"/>
         </scene>

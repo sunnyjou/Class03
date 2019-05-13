@@ -9,7 +9,11 @@
 import UIKit
 
 class MyBrowserViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var btnGoBottomConstraint: NSLayoutConstraint!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,36 +23,38 @@ class MyBrowserViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(keyboardWillAppear(natification:)),
-                                               name: UIResponder.keyboardWillShowNotification,
-                                               object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillAppear(notification:)),
+                                               name: UIResponder.keyboardWillShowNotification, object: nil)
         
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(keyboardWillAppear(natification:)),
-                                               name: UIResponder.keyboardWillHideNotification,
-                                               object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillAppear(notification:)),
+                                               name: UIResponder.keyboardWillHideNotification, object: nil)
         
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
-        NotificationCenter.default.removeObserver(self,
-                                               name: UIResponder.keyboardWillShowNotification,
-                                               object: nil)
-        NotificationCenter.default.removeObserver(self,
-                                              name: UIResponder.keyboardWillHideNotification,
-                                              object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
         
     }
     
-    @objc func keyboardWillAppear(natification: NSNotification?) {
+    @objc func keyboardWillAppear(notification: NSNotification?) {
         print("keyboardWillAppear")
+        
+        
+        guard let frame=notification? .userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else {
+            return
+        }
+        
+        self.btnGoBottomConstraint.constant = frame.cgRectValue.height;
+               
     }
     
-    @objc func keyboardWillDisappear(natification: NSNotification?) {
+    @objc func keyboardWillDisappear(notification: NSNotification?) {
         print("keyboardWillDisappear")
+        
+        self.btnGoBottomConstraint.constant = 31;
     }
     
 
