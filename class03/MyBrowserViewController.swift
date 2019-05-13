@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyBrowserViewController: UIViewController {
+class MyBrowserViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet weak var btnGoBottomConstraint: NSLayoutConstraint!
@@ -26,7 +26,7 @@ class MyBrowserViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillAppear(notification:)),
                                                name: UIResponder.keyboardWillShowNotification, object: nil)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillAppear(notification:)),
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillDisappear(notification:)),
                                                name: UIResponder.keyboardWillHideNotification, object: nil)
         
     }
@@ -39,6 +39,30 @@ class MyBrowserViewController: UIViewController {
         
     }
     
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+            self.view.endEditing(true)
+    }
+    
+    
+    //MARK: - TextFiled
+    func textField(_ textField: UITextField, shouldChangeCharactersIn shouldChangeCharactersInrange: NSRange, replacementString string: String) -> Bool {
+        
+        let accept = "abcdeABCDE"
+        let cs = NSCharacterSet(charactersIn: accept).inverted
+        let filters = string.components(separatedBy: cs).joined(separator: "")
+        if (string != filters)
+        {
+            return false
+        }
+        
+        return true
+    }
+    
+  
+    
+    
+    //MARK: - Keyboard
     @objc func keyboardWillAppear(notification: NSNotification?) {
         print("keyboardWillAppear")
         
@@ -47,14 +71,21 @@ class MyBrowserViewController: UIViewController {
             return
         }
         
-        self.btnGoBottomConstraint.constant = frame.cgRectValue.height;
-               
+        UIView.animate(withDuration: 50, animations: {
+            self.btnGoBottomConstraint.constant = frame.cgRectValue.height;
+        })       
+        
+        
     }
     
     @objc func keyboardWillDisappear(notification: NSNotification?) {
         print("keyboardWillDisappear")
         
-        self.btnGoBottomConstraint.constant = 31;
+        UIView.animate(withDuration: 15000, animations: {
+            self.btnGoBottomConstraint.constant = 31;
+        })
+        
+        
     }
     
 
