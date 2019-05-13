@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import WebKit
+
 
 class ViewController: UIViewController {
     @IBOutlet weak var Label_A: UILabel!

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F49EF2C022891F8200D75528 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49EF2BF22891F8200D75528 /* WebKit.framework */; };
 		FFAD2DA722640EAB00F42805 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAD2DA622640EAB00F42805 /* AppDelegate.swift */; };
 		FFAD2DA922640EAB00F42805 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAD2DA822640EAB00F42805 /* ViewController.swift */; };
 		FFAD2DAC22640EAB00F42805 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFAD2DAA22640EAB00F42805 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F49EF2BF22891F8200D75528 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		FFAD2DA322640EAB00F42805 /* class03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = class03.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFAD2DA622640EAB00F42805 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFAD2DA822640EAB00F42805 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F49EF2C022891F8200D75528 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F49EF2BE22891F8200D75528 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F49EF2BF22891F8200D75528 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FFAD2D9A22640EAB00F42805 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +94,7 @@
 				FFAD2DBA22640EAD00F42805 /* class03Tests */,
 				FFAD2DC522640EAD00F42805 /* class03UITests */,
 				FFAD2DA422640EAB00F42805 /* Products */,
+				F49EF2BE22891F8200D75528 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

@@ -113,19 +113,32 @@
                                     <outlet property="delegate" destination="cuM-3Z-b3o" id="zCN-9g-hjh"/>
                                 </connections>
                             </textField>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="own-O6-89c">
+                                <rect key="frame" x="20" y="105" width="374" height="666"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Fng-Yt-bJO" firstAttribute="trailing" secondItem="own-O6-89c" secondAttribute="trailing" constant="20" id="Uhh-O5-Lci"/>
+                            <constraint firstItem="bqZ-qB-LQD" firstAttribute="top" secondItem="own-O6-89c" secondAttribute="bottom" constant="30" id="VVb-UW-cd7"/>
                             <constraint firstItem="Fng-Yt-bJO" firstAttribute="bottom" secondItem="bqZ-qB-LQD" secondAttribute="bottom" constant="31" id="dm7-no-bZz"/>
+                            <constraint firstItem="own-O6-89c" firstAttribute="top" secondItem="Fng-Yt-bJO" secondAttribute="top" constant="17" id="fVV-rf-ZDz"/>
                             <constraint firstItem="bqZ-qB-LQD" firstAttribute="leading" secondItem="jlK-n6-AHx" secondAttribute="trailing" constant="16" id="hfM-l4-T8k"/>
                             <constraint firstItem="Fng-Yt-bJO" firstAttribute="trailing" secondItem="bqZ-qB-LQD" secondAttribute="trailing" constant="20" id="iQ7-i5-EWu"/>
                             <constraint firstItem="jlK-n6-AHx" firstAttribute="leading" secondItem="Fng-Yt-bJO" secondAttribute="leading" constant="20" id="kYI-N6-nag"/>
+                            <constraint firstItem="own-O6-89c" firstAttribute="leading" secondItem="Fng-Yt-bJO" secondAttribute="leading" constant="20" id="nmR-k0-aL8"/>
                             <constraint firstItem="bqZ-qB-LQD" firstAttribute="centerY" secondItem="jlK-n6-AHx" secondAttribute="centerY" id="rZR-qd-TU5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Fng-Yt-bJO"/>
                     </view>
                     <connections>
                         <outlet property="btnGoBottomConstraint" destination="dm7-no-bZz" id="LgH-Nq-iYG"/>
+                        <outlet property="myWebView" destination="own-O6-89c" id="l4b-mD-5br"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9zn-a8-ayG" userLabel="First Responder" sceneMemberID="firstResponder"/>
