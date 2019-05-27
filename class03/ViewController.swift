@@ -19,6 +19,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        //2019/5/27 初始值forKey
+        print("\(UserDefaults.standard.string(forKey: "hi")!)")
+        
+       
+        
     }
 
 

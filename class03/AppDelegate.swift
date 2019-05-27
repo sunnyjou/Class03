@@ -16,11 +16,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     //var netWorker : AsyncRequestWorker?
     
-
+    //didFinishLaunchingWithOptions 類似main
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         //netWorker = AsyncRequestWorker()
+        
+        
+        //2019/5/27 初始值forKey
+        //UserDefaults.standard.setValue("ya!", forKey: "hi")
+        //UserDefaults.standard.synchronize()
+        //print("\(UserDefaults.standard.string(forKey: "hi")!)")
+        
+        
+        //2019/5/27 目錄
+        print("\(NSHomeDirectory())")
+        
         
         return true
     }
