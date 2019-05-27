@@ -30,8 +30,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //print("\(UserDefaults.standard.string(forKey: "hi")!)")
         
         
+        
         //2019/5/27 目錄
         print("\(NSHomeDirectory())")
+        
+        
         
         
         return true

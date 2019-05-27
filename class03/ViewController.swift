@@ -21,10 +21,23 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         
-        //2019/5/27 初始值forKey
-        print("\(UserDefaults.standard.string(forKey: "hi")!)")
         
-       
+        //2019/5/27 初始值forKey
+        //print("\(UserDefaults.standard.string(forKey: "hi")!)")
+        
+        
+        
+        //2019/5/27 FileWorker.swift
+        let worker : FileWorker=FileWorker()
+        //寫檔
+        worker.writeToFile(content: "中文", fileName: "info.txt", tag: 0)
+        //讀檔
+        let results : String = worker.readFromFile(fileName: "info.txt", tag: 0)
+        print(results)
+        
+        
+        
+        
         
     }
 
