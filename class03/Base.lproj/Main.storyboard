@@ -36,7 +36,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fW-Lx-bu0">
-                                <rect key="frame" x="44" y="367" width="330" height="36"/>
+                                <rect key="frame" x="24" y="369" width="330" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="A">
@@ -47,7 +47,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8y-Hw-nqk">
-                                <rect key="frame" x="44" y="500" width="330" height="36"/>
+                                <rect key="frame" x="24" y="483" width="330" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="B">
@@ -55,6 +55,14 @@
                                 </state>
                                 <connections>
                                     <action selector="BtnMoveImageClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cVc-Yj-82D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Hl-lY-eol">
+                                <rect key="frame" x="73" y="636" width="233" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="BtnMapClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AkH-ym-TI1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -65,6 +73,7 @@
                     <connections>
                         <outlet property="Label_A" destination="1OM-fW-43V" id="lPX-i5-ENl"/>
                         <segue destination="qeD-ap-Qzh" kind="show" identifier="moveToM2kSeque" id="Xbf-5z-Vgp"/>
+                        <segue destination="1tt-cy-gRH" kind="show" identifier="moveToMapSegue" id="efC-34-vcG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -97,7 +106,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qif-Ih-jLg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="886.95652173913049" y="345.53571428571428"/>
+            <point key="canvasLocation" x="1754" y="-206"/>
+        </scene>
+        <!--My Map Controller-->
+        <scene sceneID="s0D-Tb-m4N">
+            <objects>
+                <viewController id="1tt-cy-gRH" customClass="MyMapController" customModule="class03" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bnl-ah-Irx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cO0-2Q-o0V">
+                                <rect key="frame" x="20" y="121" width="374" height="681"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fAi-dZ-0nL"/>
+                    </view>
+                    <connections>
+                        <outlet property="MyMapView" destination="cO0-2Q-o0V" id="XDe-H1-IpJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oOY-xK-EYx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1939" y="792"/>
         </scene>
         <!--My Browser View Controller-->
         <scene sceneID="nK0-ir-x2V">
@@ -157,7 +190,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9zn-a8-ayG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="895.6521739130435" y="-319.41964285714283"/>
+            <point key="canvasLocation" x="851" y="-571"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KVt-Qb-vtQ">

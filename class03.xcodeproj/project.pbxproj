@@ -16,6 +16,7 @@
 		F411734322A4AB2A0088ECAA /* ServiceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F411734222A4AB2A0088ECAA /* ServiceCategory.swift */; };
 		F411734522A4AB530088ECAA /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F411734422A4AB530088ECAA /* Store.swift */; };
 		F411734722A4B4140088ECAA /* ImageViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F411734622A4B4140088ECAA /* ImageViewControl.swift */; };
+		F411734D22A4C7CA0088ECAA /* MyMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F411734C22A4C7CA0088ECAA /* MyMapController.swift */; };
 		F49EF2C022891F8200D75528 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49EF2BF22891F8200D75528 /* WebKit.framework */; };
 		FFAD2DA722640EAB00F42805 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAD2DA622640EAB00F42805 /* AppDelegate.swift */; };
 		FFAD2DA922640EAB00F42805 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAD2DA822640EAB00F42805 /* ViewController.swift */; };
@@ -60,6 +61,7 @@
 		F411734222A4AB2A0088ECAA /* ServiceCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategory.swift; sourceTree = "<group>"; };
 		F411734422A4AB530088ECAA /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		F411734622A4B4140088ECAA /* ImageViewControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewControl.swift; sourceTree = "<group>"; };
+		F411734C22A4C7CA0088ECAA /* MyMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapController.swift; sourceTree = "<group>"; };
 		F49EF2BF22891F8200D75528 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		FFAD2DA322640EAB00F42805 /* class03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = class03.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFAD2DA622640EAB00F42805 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				F411734222A4AB2A0088ECAA /* ServiceCategory.swift */,
 				F411734422A4AB530088ECAA /* Store.swift */,
 				F411734622A4B4140088ECAA /* ImageViewControl.swift */,
+				F411734C22A4C7CA0088ECAA /* MyMapController.swift */,
 			);
 			path = class03;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				FFD1B8E8227FDEDE0062FEF9 /* MyBrowserViewController.swift in Sources */,
 				F411734722A4B4140088ECAA /* ImageViewControl.swift in Sources */,
 				F408C494229B8726003C7FFC /* FileWorker.swift in Sources */,
+				F411734D22A4C7CA0088ECAA /* MyMapController.swift in Sources */,
 				FFAD2DA722640EAB00F42805 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,17 +10,46 @@ import UIKit
 import WebKit
 
 
+
+
+
 class ViewController: UIViewController {
     @IBOutlet weak var Label_A: UILabel!
+    
     
     @IBAction func Button_Push(_ sender: Any) {
         Label_A.text="HI,Xcode"
     }
-    
+
+    @IBAction func BtnMapClicked(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: "moveToMapSegue", sender: self)
+        print("a")
+        
+    }
+        
     @IBAction func BtnMoveImageClicked(_ sender: Any) {
         
-        performSegue(withIdentifier: "moveToM2kSeque", sender: self)
+        let alert=UIAlertController(title: "資訊", message: "YN", preferredStyle: .alert)
+        //let alert=UIAlertController(title: "資訊", message: "YN", preferredStyle: .actionSheet)
         
+        let okAction = UIAlertAction(title:"YES", style: .default, handler: {action in
+            
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "moveToM2kSeque", sender: self)
+            }
+            
+        })
+        alert.addAction(okAction)
+        
+        
+        let cancelAction = UIAlertAction(title:"Noooooo", style: .default, handler: {action in
+
+        })
+        alert.addAction(cancelAction)
+        
+        present(alert, animated: true, completion: nil)
+      
     }
     
     override func viewDidLoad() {
@@ -28,10 +57,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         
-        
         //2019/5/27 初始值forKey
         //print("\(UserDefaults.standard.string(forKey: "hi")!)")
-        
         
         
         //2019/5/27 FileWorker.swift
