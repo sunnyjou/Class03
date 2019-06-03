@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     @IBAction func BtnMapClicked(_ sender: UIButton) {
         
         self.performSegue(withIdentifier: "moveToMapSegue", sender: self)
-        print("a")
+        //print("a")
         
     }
         
