@@ -16,6 +16,13 @@ class ViewController: UIViewController {
     @IBAction func Button_Push(_ sender: Any) {
         Label_A.text="HI,Xcode"
     }
+    
+    @IBAction func BtnMoveImageClicked(_ sender: Any) {
+        
+        performSegue(withIdentifier: "moveToM2kSeque", sender: self)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -36,8 +43,14 @@ class ViewController: UIViewController {
         print(results)
         
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        
+        if (segue.identifier == "moveToM2kSeque") {
+        let vc=segue.destination as! ImageViewControl
+            vc.index=5
+        }
         
     }
 
