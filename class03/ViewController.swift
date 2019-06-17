@@ -9,10 +9,6 @@
 import UIKit
 import WebKit
 
-
-
-
-
 class ViewController: UIViewController {
     @IBOutlet weak var Label_A: UILabel!
     
@@ -24,7 +20,6 @@ class ViewController: UIViewController {
     @IBAction func BtnMapClicked(_ sender: UIButton) {
         
         self.performSegue(withIdentifier: "moveToMapSegue", sender: self)
-        //print("a")
         
     }
     
@@ -48,7 +43,6 @@ class ViewController: UIViewController {
             
         })
         alert.addAction(okAction)
-        
         
         let cancelAction = UIAlertAction(title:"Noooooo", style: .default, handler: {action in
 

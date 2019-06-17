@@ -16,15 +16,31 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
  
-        let cell : UITableViewCell = UITableViewCell(style: .default, reuseIdentifier: "a")
+        //let cell : UITableViewCell = UITableViewCell(style: .default, reuseIdentifier: "a")
+        //cell.textLabel?.text = self.array[indexPath.row]
         
-        cell.textLabel?.text="aaaaaaaa"
-        
-        
-        
+        let cell : MyTableViewCell = tableView.dequeueReusableCell(withIdentifier: MyTableViewCell.identifier) as! MyTableViewCell
+        let title : String = self.array[indexPath.row]
+        cell.updateContent(content: title)
         
         return cell
     }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        selectedContent = self.array[indexPath.row]
+        
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "moveToDetailSegue", sender: self)
+        }
+        
+    }
+    
+    
+    var selectedContent : String?
     
     var array : [String]!
     
@@ -34,19 +50,24 @@ class ProductListViewController: UIViewController, UITableViewDelegate, UITableV
 
         // Do any additional setup after loading the view.
         
-        array = ["a", "b", "c"]
+        array = ["Swift is very strict about types. But although explicit typing is good for saving us from mistakes, it becomes painful when dealing with JSON and other areas that are, by nature, implicit about types.", "iOS 8.0+ | macOS 10.10+ | tvOS 9.0+ | watchOS 2.0+ Xcode 8", "c"]
         
     }
     
 
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+        if (segue.identifier == "moveToDetailSegue") {
+            
+            let destination = segue.destination as! DetailViewController
+            
+            destination.content = self.selectedContent
+            
+        }
+        
+        
     }
-    */
-
 }

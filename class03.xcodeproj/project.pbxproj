@@ -12,6 +12,8 @@
 		BA5D8F09704CF25986F1DF31 /* Pods_class03Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5178D29BEE325BA38599B4CC /* Pods_class03Tests.framework */; };
 		F400C35B22924A6B0071DA42 /* AsyncRequestWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F400C35A22924A6B0071DA42 /* AsyncRequestWorker.swift */; };
 		F408AF5A22B72440002C70B6 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408AF5922B72440002C70B6 /* ProductListViewController.swift */; };
+		F408AF5C22B7372A002C70B6 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408AF5B22B7372A002C70B6 /* MyTableViewCell.swift */; };
+		F408AF5E22B742A2002C70B6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408AF5D22B742A2002C70B6 /* DetailViewController.swift */; };
 		F408C494229B8726003C7FFC /* FileWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408C493229B8726003C7FFC /* FileWorker.swift */; };
 		F408C496229B9416003C7FFC /* ServiceCategoryContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408C495229B9416003C7FFC /* ServiceCategoryContext.swift */; };
 		F411734322A4AB2A0088ECAA /* ServiceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F411734222A4AB2A0088ECAA /* ServiceCategory.swift */; };
@@ -58,6 +60,8 @@
 		E71499379308F8256889A433 /* Pods-class03UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-class03UITests.debug.xcconfig"; path = "Target Support Files/Pods-class03UITests/Pods-class03UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F400C35A22924A6B0071DA42 /* AsyncRequestWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncRequestWorker.swift; sourceTree = "<group>"; };
 		F408AF5922B72440002C70B6 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		F408AF5B22B7372A002C70B6 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		F408AF5D22B742A2002C70B6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F408C493229B8726003C7FFC /* FileWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWorker.swift; sourceTree = "<group>"; };
 		F408C495229B9416003C7FFC /* ServiceCategoryContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategoryContext.swift; sourceTree = "<group>"; };
 		F411734222A4AB2A0088ECAA /* ServiceCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategory.swift; sourceTree = "<group>"; };
@@ -174,6 +178,8 @@
 				F411734622A4B4140088ECAA /* ImageViewControl.swift */,
 				F411734C22A4C7CA0088ECAA /* MyMapController.swift */,
 				F408AF5922B72440002C70B6 /* ProductListViewController.swift */,
+				F408AF5B22B7372A002C70B6 /* MyTableViewCell.swift */,
+				F408AF5D22B742A2002C70B6 /* DetailViewController.swift */,
 			);
 			path = class03;
 			sourceTree = "<group>";
@@ -424,11 +430,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F408AF5E22B742A2002C70B6 /* DetailViewController.swift in Sources */,
 				F411734322A4AB2A0088ECAA /* ServiceCategory.swift in Sources */,
 				F400C35B22924A6B0071DA42 /* AsyncRequestWorker.swift in Sources */,
 				F408C496229B9416003C7FFC /* ServiceCategoryContext.swift in Sources */,
 				F411734522A4AB530088ECAA /* Store.swift in Sources */,
 				FFAD2DA922640EAB00F42805 /* ViewController.swift in Sources */,
+				F408AF5C22B7372A002C70B6 /* MyTableViewCell.swift in Sources */,
 				FFD1B8E8227FDEDE0062FEF9 /* MyBrowserViewController.swift in Sources */,
 				F411734722A4B4140088ECAA /* ImageViewControl.swift in Sources */,
 				F408C494229B8726003C7FFC /* FileWorker.swift in Sources */,
