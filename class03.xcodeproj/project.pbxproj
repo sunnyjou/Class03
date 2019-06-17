@@ -11,6 +11,7 @@
 		7EDFA8511EDFAF2DD337B98F /* Pods_class03.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C30DB611BC71227B155D74AE /* Pods_class03.framework */; };
 		BA5D8F09704CF25986F1DF31 /* Pods_class03Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5178D29BEE325BA38599B4CC /* Pods_class03Tests.framework */; };
 		F400C35B22924A6B0071DA42 /* AsyncRequestWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F400C35A22924A6B0071DA42 /* AsyncRequestWorker.swift */; };
+		F408AF5A22B72440002C70B6 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408AF5922B72440002C70B6 /* ProductListViewController.swift */; };
 		F408C494229B8726003C7FFC /* FileWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408C493229B8726003C7FFC /* FileWorker.swift */; };
 		F408C496229B9416003C7FFC /* ServiceCategoryContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408C495229B9416003C7FFC /* ServiceCategoryContext.swift */; };
 		F411734322A4AB2A0088ECAA /* ServiceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F411734222A4AB2A0088ECAA /* ServiceCategory.swift */; };
@@ -56,6 +57,7 @@
 		E0DA80C68C1F1805E8F3206F /* Pods-class03.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-class03.debug.xcconfig"; path = "Target Support Files/Pods-class03/Pods-class03.debug.xcconfig"; sourceTree = "<group>"; };
 		E71499379308F8256889A433 /* Pods-class03UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-class03UITests.debug.xcconfig"; path = "Target Support Files/Pods-class03UITests/Pods-class03UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F400C35A22924A6B0071DA42 /* AsyncRequestWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncRequestWorker.swift; sourceTree = "<group>"; };
+		F408AF5922B72440002C70B6 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		F408C493229B8726003C7FFC /* FileWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWorker.swift; sourceTree = "<group>"; };
 		F408C495229B9416003C7FFC /* ServiceCategoryContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategoryContext.swift; sourceTree = "<group>"; };
 		F411734222A4AB2A0088ECAA /* ServiceCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategory.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				F411734422A4AB530088ECAA /* Store.swift */,
 				F411734622A4B4140088ECAA /* ImageViewControl.swift */,
 				F411734C22A4C7CA0088ECAA /* MyMapController.swift */,
+				F408AF5922B72440002C70B6 /* ProductListViewController.swift */,
 			);
 			path = class03;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				F411734722A4B4140088ECAA /* ImageViewControl.swift in Sources */,
 				F408C494229B8726003C7FFC /* FileWorker.swift in Sources */,
 				F411734D22A4C7CA0088ECAA /* MyMapController.swift in Sources */,
+				F408AF5A22B72440002C70B6 /* ProductListViewController.swift in Sources */,
 				FFAD2DA722640EAB00F42805 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

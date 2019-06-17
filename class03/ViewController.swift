@@ -27,6 +27,13 @@ class ViewController: UIViewController {
         //print("a")
         
     }
+    
+    @IBAction func btnTable(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: "moveToTableView", sender: self)
+        
+    }
+    
         
     @IBAction func BtnMoveImageClicked(_ sender: Any) {
         
