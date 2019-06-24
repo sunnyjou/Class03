@@ -16,6 +16,12 @@ class ViewController: UIViewController {
     @IBAction func Button_Push(_ sender: Any) {
         Label_A.text="HI,Xcode"
     }
+    
+    @IBAction func btnWebClicked(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: "moveToWebSegue", sender: self)
+        
+    }
 
     @IBAction func BtnMapClicked(_ sender: UIButton) {
         

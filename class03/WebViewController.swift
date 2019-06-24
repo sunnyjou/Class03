@@ -12,7 +12,7 @@ import WebKit
 class WebViewController: UIViewController
     , WKUIDelegate
     , WKNavigationDelegate
-, WKScriptMessageHandler {
+    , WKScriptMessageHandler {
     
     
     
