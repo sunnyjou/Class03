@@ -81,6 +81,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brd-ah-X69">
                                 <rect key="frame" x="47" y="667" width="335" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="WebViewButton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -165,7 +166,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tus-qv-J30" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="143" y="793"/>
+            <point key="canvasLocation" x="-122" y="782"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="vwy-BS-g9g">
@@ -192,7 +193,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZOe-yU-gVt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="975" y="867"/>
+            <point key="canvasLocation" x="565" y="836"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="ubb-F5-0z5">
@@ -207,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZNq-cw-lwq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1799" y="331"/>
+            <point key="canvasLocation" x="1458" y="516"/>
         </scene>
         <!--Image View Control-->
         <scene sceneID="dAu-4G-2qP">
@@ -235,7 +236,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qif-Ih-jLg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1614" y="-421"/>
+            <point key="canvasLocation" x="1651" y="-238"/>
         </scene>
         <!--My Map Controller-->
         <scene sceneID="s0D-Tb-m4N">
@@ -259,7 +260,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oOY-xK-EYx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-641" y="749"/>
+            <point key="canvasLocation" x="-786" y="746"/>
         </scene>
         <!--My Browser View Controller-->
         <scene sceneID="nK0-ir-x2V">
